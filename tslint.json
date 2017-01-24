@@ -1,0 +1,12 @@
+{
+    "extends": ["tslint-config-airbnb", "tslint-config-prettier"],
+    "rules": {
+      "prefer-array-literal": [false],
+      "variable-name": [true, "check-format", "allow-leading-underscore"],
+      "object-shorthand-properties-first": [false],
+      "only-arrow-functions": [true],
+      "ter-arrow-body-style": [true, "as-needed"],
+      "array-type": [true, "array-simple"]
+    }
+  }
+  

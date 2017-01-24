@@ -1,0 +1,52 @@
+{
+  "name": "starling-ioc",
+  "version": "1.0.0",
+  "description": "IoC Container App",
+  "main": "src/index.ts",
+  "author": "Piotr Szpak",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "ts-jest": "^23.10.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "tslint": "tslint -p . -c tslint.json \"src/**/*.ts\" \"test/**/*.ts\"",
+    "prettier": "echo $(prettier --version) && prettier \"{test,src}/**/*.ts\"",
+    "fmt": "npm run tslint -- --fix && npm run prettier -- --write"
+  },
+  "dependencies": {},
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "<rootDir>/test/**/*.test.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/test/"
+    ]
+  }
+}
