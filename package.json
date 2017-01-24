@@ -1,0 +1,42 @@
+{
+  "name": "starling-ioc",
+  "version": "1.0.0",
+  "description": "A simple IoC container for node.js with ES6",
+  "main": "build/app.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec babel-node",
+    "build": "babel src -d build",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterstarling/starling-ioc.git"
+  },
+  "keywords": [
+    "ioc",
+    "container",
+    "node"
+  ],
+  "author": "Piotr Szpak <piotr.lukasz.szpak@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterstarling/starling-ioc/issues"
+  },
+  "homepage": "https://github.com/peterstarling/starling-ioc#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "co": "^4.6.0",
+    "sinon": "^1.17.7"
+  },
+  "homepage": "https://github.com/peterstarling/starling-ioc#readme"
+}
